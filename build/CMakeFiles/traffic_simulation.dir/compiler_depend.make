@@ -320,14 +320,14 @@ CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o: ../src/Graphics.cpp \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   ../src/Intersection.h \
-  ../src/TrafficLight.h \
+  /usr/include/c++/11/future \
   /usr/include/c++/11/condition_variable \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_futex.h \
+  ../src/TrafficLight.h \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/future \
-  /usr/include/c++/11/atomic \
-  /usr/include/c++/11/bits/atomic_futex.h
+  /usr/include/c++/11/bits/deque.tcc
 
 CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o: ../src/Intersection.cpp \
   /usr/include/stdc-predef.h \
@@ -580,8 +580,6 @@ CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o: ../src/Intersection.cp
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   ../src/Intersection.h \
-  ../src/TrafficLight.h \
-  ../src/TrafficObject.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -589,6 +587,8 @@ CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o: ../src/Intersection.cp
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
+  ../src/TrafficObject.h \
+  ../src/TrafficLight.h \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
@@ -818,15 +818,15 @@ CMakeFiles/traffic_simulation.dir/src/Street.cpp.o: ../src/Street.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../src/Intersection.h \
-  ../src/TrafficLight.h \
-  /usr/include/c++/11/condition_variable \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/future \
+  /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_futex.h \
   /usr/include/c++/11/bits/std_function.h \
+  ../src/TrafficLight.h \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
   ../src/Street.h
 
 CMakeFiles/traffic_simulation.dir/src/TrafficLight.cpp.o: ../src/TrafficLight.cpp \
@@ -1059,6 +1059,9 @@ CMakeFiles/traffic_simulation.dir/src/TrafficLight.cpp.o: ../src/TrafficLight.cp
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_queue.h \
   /usr/include/c++/11/random \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
@@ -1909,15 +1912,15 @@ CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o: ../src/Vehicle.cpp \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   ../src/Intersection.h \
-  ../src/TrafficLight.h \
-  /usr/include/c++/11/condition_variable \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/future \
+  /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_futex.h \
   /usr/include/c++/11/bits/std_function.h \
+  ../src/TrafficLight.h \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
   ../src/Vehicle.h
 
 
@@ -1939,13 +1942,13 @@ CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o: ../src/Vehicle.cpp \
 
 ../src/Intersection.cpp:
 
-/usr/include/c++/11/atomic:
-
 /usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/c++/11/deque:
 
 ../src/TrafficLight.h:
+
+/usr/include/c++/11/atomic:
 
 ../src/Intersection.h:
 
@@ -2008,6 +2011,8 @@ CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o: ../src/Vehicle.cpp \
 /usr/include/opencv4/opencv2/videoio.hpp:
 
 /usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/c++/11/queue:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
@@ -2284,6 +2289,8 @@ CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o: ../src/Vehicle.cpp \
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/c++/11/bits/stl_queue.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 

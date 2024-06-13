@@ -2,20 +2,6 @@
 #include <future>
 #include <iostream>
 #include <random>
-/* Implementation of class "MessageQueue" */
-
-/*
-
-*/
-
-/* Implementation of class "TrafficLight" */
-
-/*
-
-
-
-
-*/
 
 void TrafficLight::waitForGreen()
 {
@@ -36,6 +22,7 @@ void TrafficLight::waitForGreen()
 TrafficLight::TrafficLight()
 {
     _currentPhase = TrafficLightPhase::red;
+    _msg_queue = std::make_shared<MessageQueue<TrafficLightPhase>>();
 }
 
 template <typename T> T MessageQueue<T>::receive()
